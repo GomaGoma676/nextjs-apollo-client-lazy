@@ -1,7 +1,7 @@
-import '../styles/globals.css'
 import { AppProps } from 'next/app'
 import { ApolloProvider } from '@apollo/client'
 import { initializeApollo } from '../lib/apolloClient'
+import 'tailwindcss/tailwind.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const client = initializeApollo()
